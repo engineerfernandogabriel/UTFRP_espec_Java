@@ -3,10 +3,10 @@ public class Pessoa{
 	String nome;
 	
 	public void insereDados(){
-		int rg = 1;
-		String nome = "Jesus";
-		this.rg = rg;
-		this.nome = nome;
+		int id = 1;
+		String apelido = "Jesus";
+		rg = id;
+		nome = apelido;
 	}
 	
 	public void mostraDados(){
