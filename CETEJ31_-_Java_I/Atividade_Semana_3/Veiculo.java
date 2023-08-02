@@ -1,4 +1,4 @@
-public class Veiculo{
+public abstract class Veiculo{
     
     private String placa;
     private String marca;
@@ -40,6 +40,8 @@ public class Veiculo{
         this.qtdRodas = qtdRodas;
         this.motor = new Motor(qtdPist, potencia);
     }
+
+    abstract float calcVel(float VelocMax);
 
     public String getPlaca(){
         return this.placa;
@@ -103,7 +105,7 @@ public class Veiculo{
         System.out.println("QtdeRodas: " + this.qtdRodas);
         System.out.println("QtdPist: " + this.motor.getQtdPist());
         System.out.println("Potencia: " + this.motor.getPotencia());
-        System.out.println("==============================================");
+        System.out.println("============================================");
         return null;
     }
 }
