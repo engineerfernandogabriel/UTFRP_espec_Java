@@ -4,7 +4,7 @@
 
 **1) Observe o seguinte Diagrama de Classes:**
 
-![Diagrama de classes](/CETEJ31_-_Java_I/Images/Diagrama_de_classe_-_Atividade_semana_1.png)
+![Diagrama de classes - Atividade Semana 01](/CETEJ31_-_Java_I/Images/Diagrama_de_classe_-_Atividade_semana_1.png)
 
 **2) DESENVOLVA UMA APLICAÇÃO NA LINGUAGEM DE PROGRAMAÇÃO JAVA ATENDENDO OS SEGUINTES REQUISITOS:**
 - a) Todos os métodos construtores default (que não possuem parâmetros formais em sua assinatura) deverão iniciar com 0 (zeros) atributos que sejam de tipos numerais (int, double, float, etc.) e com espaço em branco (“ “) aqueles que forem de tipo literais (char, String e etc).
@@ -27,3 +27,15 @@
 - Os itens avaliados são os solicitados no enunciado. Elementos extras NÃO renderão pontos a mais.
 - O não cumprimento do que foi solicitado acarretará no decréscimo da nota de acordo com a gravidade da falta.
 - A justificativa para qualquer desconto será colocada, pelo avaliador, no campo de feedback de cada Atividade.
+
+
+&nbsp;
+### INFORMAÇÕES SOBRE O DESENVOLVIMENTO
+1. O projeto foi desenvolvido sem o uso de IDE, utilizando o Notepad++.
+1. O projeto foi desenvolvido em Java "puro", sem o uso de nenhum Framework.
+1. Para rodar use o terminal:
+    - Todos os arquivos devem estar dentro da mesma pasta.
+    - Dentro da pasta rode o comando **$ javac Teste.java**    _//isso irá criar os bytecodes (arquivos .class)._
+    - Dentro da pasta rode o comando **$ java Teste**          _//isso irá rodar o bytecode._
+
+Obs.: Se aparecer a lista de Veiculos impressos no terminal deu tudo certo!!!
