@@ -3,7 +3,7 @@
 ## Atividade 01 – Implementação modelo Motor/Veículo/Teste
 
 1) Observe o seguinte Diagrama de Classes:
-![CETEJ31_-_Java_I\Images\Diagrama_de_classe_-_Atividade_semana_1.png]
+![](/CETEJ31_-_Java_I/Images/Diagrama_de_classe_-_Atividade_semana_1.png)
 
 2) DESENVOLVA UMA APLICAÇÃO NA LINGUAGEM DE PROGRAMAÇÃO JAVA ATENDENDO OS
 SEGUINTES REQUISITOS:
