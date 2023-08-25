@@ -4,7 +4,7 @@
 
 **1) Observe o seguinte Diagrama de Classes:**
 
-![Diagrama de classes - Atividade Semana 01](/CETEJ31_-_Java_I/Images/Diagrama_de_classe_-_Atividade_semana_1.png)
+![Diagrama de classes - Atividade Semana 1](/CETEJ31_-_Java_I/Images/Diagrama_de_classe_-_Atividade_semana_1.png)
 
 **2) DESENVOLVA UMA APLICAÇÃO NA LINGUAGEM DE PROGRAMAÇÃO JAVA ATENDENDO OS SEGUINTES REQUISITOS:**
 - a) Todos os métodos construtores default (que não possuem parâmetros formais em sua assinatura) deverão iniciar com 0 (zeros) atributos que sejam de tipos numerais (int, double, float, etc.) e com espaço em branco (“ “) aqueles que forem de tipo literais (char, String e etc).
