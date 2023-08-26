@@ -17,22 +17,16 @@ amarelo e laranja (relacionamentos) no diagrama.
 ![Diagrama de classes - Atividade Semana 3](/CETEJ31_-_Java_I/Images/Diagrama_de_classe_-_Atividade_semana_3.png)
 
 **2) UTILIZE O CÓDIGO DESENVOLVIDO NA ATIVIDADE 01 E DESENVOLVA OS NOVOS ELEMENTOS APRESENTADOS NO DIGRAMA ACIMA. ABAIXO, SEGUE A LISTA DE REQUISITOS A SEREM SEGUIDOS:**
-A “entrada” da velocidade (atributo velocMax) sempre será dada em km/h porém, a
-exibição destes dados ocorrerá na classe Teste e da seguinte forma:
-i. A velocidade do veículo de passeio deverá ser calculada em m/h;
-1 kilometer/hour = 1000 meter/hour
-ii. A velocidade do veículo de carga deverá ser calculada em cm/h;
-1 kilometer/hour = 100000 centimeter/hour
-b. Os métodos construtores default das novas classes também deverão iniciar com 0
-(zeros) atributos que sejam de tipos numerais (int, double, float, etc.) e com espaço em
-branco os que forem de tipo literais (char, String e etc.).
-c. Garanta que nunca ocorra:
-i. As classes Passeio e Carga jamais deverão ser estendidas (herdadas);
-ii. Nenhum método “set” (de nenhuma classe) poderá ser sobrescrito;
-d. A classe “Teste” deve ser construída de forma a testar todas as funcionalidades do
-programa (entrada, saída e cálculos), propiciando assim “trocas de mensagens” entre
-os objetos das classes Teste→Passeio e Teste→Carga. Por meio dela deverá ser
-possível instanciar 5 veículos de cada tipo (Passeio/Carga).
+- a) A “entrada” da velocidade (atributo velocMax) sempre será dada em km/h porém, a exibição destes dados ocorrerá na classe Teste e da seguinte forma:
+    - i. A velocidade do veículo de passeio deverá ser calculada em m/h;
+            1 kilometer/hour = 1000 meter/hour
+    - ii. A velocidade do veículo de carga deverá ser calculada em cm/h;
+            1 kilometer/hour = 100000 centimeter/hour
+- b) Os métodos construtores default das novas classes também deverão iniciar com 0 (zeros) atributos que sejam de tipos numerais (int, double, float, etc.) e com espaço em branco os que forem de tipo literais (char, String e etc.).
+- c) Garanta que nunca ocorra:
+    - i. As classes Passeio e Carga jamais deverão ser estendidas (herdadas);
+    - ii. Nenhum método “set” (de nenhuma classe) poderá ser sobrescrito;
+- d) A classe “Teste” deve ser construída de forma a testar todas as funcionalidades do programa (entrada, saída e cálculos), propiciando assim “trocas de mensagens” entre os objetos das classes Teste→Passeio e Teste→Carga. Por meio dela deverá ser possível instanciar 5 veículos de cada tipo (Passeio/Carga).
 
 
 **3) O QUE SERÁ AVALIADO:**
