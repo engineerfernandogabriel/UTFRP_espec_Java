@@ -14,7 +14,7 @@ Por exemplo, ao definir-se como "final" um método "set", indicando que não pod
 Obs.: As alterações e novos elementos referentes à atividade encontram-se marcadas em
 amarelo e laranja (relacionamentos) no diagrama.
 
-![Diagrama de classes - Atividade Semana 3](/CETEJ31_-_Java_I/Images/Diagrama_de_classe_-_Atividade_semana_2.png)
+![Diagrama de classes - Atividade Semana 3](/CETEJ31_-_Java_I/Images/Diagrama_de_classe_-_Atividade_semana_3.png)
 
 **2) UTILIZE O CÓDIGO DESENVOLVIDO NA ATIVIDADE 01 E DESENVOLVA OS NOVOS ELEMENTOS APRESENTADOS NO DIGRAMA ACIMA. ABAIXO, SEGUE A LISTA DE REQUISITOS A SEREM SEGUIDOS:**
 A “entrada” da velocidade (atributo velocMax) sempre será dada em km/h porém, a
