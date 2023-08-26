@@ -1,4 +1,4 @@
-public class Passeio extends Veiculo{
+public final class Passeio extends Veiculo{
     
     private int qtdPassgeiros;
 

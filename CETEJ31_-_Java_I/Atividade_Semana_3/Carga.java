@@ -1,4 +1,4 @@
-public class Carga extends Veiculo{
+public final class Carga extends Veiculo{
     
     private int cargaMax;
     private int tara;
