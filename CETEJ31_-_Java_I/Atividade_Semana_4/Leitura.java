@@ -3,9 +3,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class Leitura{
-    public String entDados(String rotulo){
+    public String entDados(String prompt){
 
-        System.out.println(rotulo);
+        System.out.println(prompt);
 
         InputStreamReader teclado = new InputStreamReader(System.in);
         BufferedReader buff = new BufferedReader(teclado);

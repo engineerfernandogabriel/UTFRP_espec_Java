@@ -1,45 +1,62 @@
-public final class Carga extends Veiculo implements Calc{
-    
-    private int cargaMax;
-    private int tara;
+public class Carga extends Veiculo implements Calc {
 
+	private int tara;
+	private int cargaMax;
 
-    public Carga(){
-        this.cargaMax = 0;
-        this.tara = 0;
-    }
+	public Carga() {
+		super();
+		this.tara = 0;
+		this.cargaMax = 0;
+	}
 
-    public int getCargaMax(){
-        return this.cargaMax;
-    }
+    public Carga(int tara, int cargaMax, String placa, String marca, String modelo, int velocMax, String cor, int qtdeRodas, int qtdPist, int potencia) {
+		super(placa, marca, modelo, velocMax, cor, qtdeRodas, qtdPist, potencia);
+		this.tara = tara;
+		this.cargaMax = cargaMax;
+	}
 
-    public int getTara(){
-        return this.tara;
-    }
+	public int getCargaMax() {
+		return cargaMax;
+	}
 
-    public void setCargaMax(int cargaMax){
-        this.cargaMax = cargaMax;
-    }
+	public void setCargaMax(int cargaMax) {
+		this.cargaMax = cargaMax;
+	}
 
-    public void setTara(int tara){
-        this.tara = tara;
-    }
+	public int getTara() {
+		return tara;
+	}
 
-    public void calcVel(){
-        int x = (getVelocMax() * 10000);
-        System.out.println("\nVelocidade Maxima de Carga" + x + "CM/H");
-    }
+	public void setTara(int tara) {
+		this.tara = tara;
+	}
 
-    public int calcular(){
-        int somaNumeros = 0;
+	@Override
+	public int calcular() {
+		return this.tara + this.cargaMax + getVelocMax() + getQtdeRodas() + getMotor().getPotencia() + getMotor().getQtdPist();
+	}
 
-        somaNumeros += getMotor().getQtdPist();
-        somaNumeros += getMotor().getPotencia();
-        somaNumeros += getQtdRodas();
-        somaNumeros += getVelocMax();
-        somaNumeros += getTara();
-        somaNumeros += getCargaMax(); 
+	@Override
+	public int calcVelocMax(int velocMax) {
+		return velocMax * 1000;
+	}
 
-        return somaNumeros;
-    }
+	@Override
+	public String toString() {
+		
+		StringBuilder builder = new StringBuilder();
+		
+		builder.append("\nPlaca = " + getPlaca());
+		builder.append("\nMarca = " + getMarca());
+		builder.append("\nModelo = " + getModelo());
+		builder.append("\nVelocidade Maxima = "+ getVelocMax());
+		builder.append("\nCor = " + getCor());
+		builder.append("\nQtde de Rodas = " + getQtdeRodas());
+		builder.append("\nQtde de Pistao = " + getMotor().getQtdPist());
+		builder.append("\nPotencia = " + getMotor().getPotencia());
+		builder.append("\nCarga Maxima = " + getCargaMax());
+		builder.append("\nTara = " + getTara());
+		
+		return builder.toString();
+	}
 }

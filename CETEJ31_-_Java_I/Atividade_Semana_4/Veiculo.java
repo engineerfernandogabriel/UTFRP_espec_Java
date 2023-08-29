@@ -1,97 +1,86 @@
-public abstract class Veiculo{
-    
-    private String placa;
-    private String marca;
-    private String modelo;
-    private String cor;
-    private int velocMax;
-    private int qtdRodas;
-    private Motor motor;
+public abstract class Veiculo {
 
-    //construtor Default (sem parametros);
-    public Veiculo(){
-        this.placa = " ";
-        this.marca = " ";
-        this.modelo = " ";
-        this.cor = " ";
-        this.velocMax = 0;
-        this.qtdRodas = 0;
-        motor = new Motor();
-    }
+	private String placa;
+	private String marca;
+	private String modelo;
+	private int velocMax;
+	private String cor;
+	private int qtdeRodas;
+	private Motor motor;
 
-    //construtor recebendo parâmetros para a classe Veiculo e instanciando a classe Motor (sem parametros);
-    public Veiculo(String placa, String marca, String modelo, String cor, int velocMax, int qtdRodas){
-        this.placa = placa;
-        this.marca = marca;
-        this.modelo = modelo;
-        this.cor = cor;
-        this.velocMax = velocMax;
-        this.qtdRodas = qtdRodas;
-        motor = new Motor();
-    }
+	public Veiculo() {
+		this.placa = " ";
+		this.marca = " ";
+		this.modelo = " ";
+		this.velocMax = 0;
+		this.cor = " ";
+		this.qtdeRodas = 0;
+		this.motor = new Motor();
+	}
 
-    //construtor instanciando a classe Motor com os paâmetros (atributos da classe motor);
-    public Veiculo(String placa, String marca, String modelo, String cor, int velocMax, int qtdRodas, int qtdPist, int potencia){
-        this.placa = placa;
-        this.marca = marca;
-        this.modelo = modelo;
-        this.cor = cor;
-        this.velocMax = velocMax;
-        this.qtdRodas = qtdRodas;
-        this.motor = new Motor(qtdPist, potencia);
-    }
+	public Veiculo(String placa, String marca, String modelo, int velocMax, String Cor, int qtdeRodas , int qtdPist, int potencia) {
+		this.placa = placa;
+		this.marca = marca;
+		this.modelo = modelo;
+		this.velocMax = velocMax;
+		this.motor = new Motor(qtdPist, potencia);
+	}
 
-    public abstract void calcVel();
+	public String getPlaca() {
+		return placa;
+	}
 
-    public String getPlaca(){
-        return this.placa;
-    }
+	public String getCor() {
+		return cor;
+	}
 
-    public String getMarca(){
-        return this.marca;
-    }
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
 
-    public String getModelo(){
-        return this.modelo;
-    }
+	public int getQtdeRodas() {
+		return qtdeRodas;
+	}
 
-    public String getCor(){
-        return this.cor;
-    }
+	public void setQtdeRodas(int qtdeRodas) {
+		this.qtdeRodas = qtdeRodas;
+	}
 
-    public int getVelocMax(){
-        return this.velocMax;
-    }
+	public void setPlaca(String placa) {
+		this.placa = placa;
+	}
 
-    public int getQtdRodas(){
-        return this.qtdRodas;
-    }
+	public String getMarca() {
+		return marca;
+	}
 
-    public Motor getMotor(){
-        return this.motor;
-    }
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
 
-    public final void setPlaca(String placa){
-        this.placa = placa;
-    }
+	public String getModelo() {
+		return modelo;
+	}
 
-    public final void setMarca(String marca){
-        this.marca = marca;
-    }
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
 
-    public final void setModelo(String modelo){
-        this.modelo = modelo;
-    }
+	public int getVelocMax() {
+		return velocMax;
+	}
 
-    public final void setCor (String cor){
-        this.cor = cor;
-    }
+	public void setVelocMax(int velocMax) {
+		this.velocMax = velocMax;
+	}
 
-    public final void setVelocMax(int velocMax){
-        this.velocMax = velocMax;
-    }
+	public Motor getMotor() {
+		return motor;
+	}
 
-    public final void setQtdRodas (int qtdRodas){
-        this.qtdRodas = qtdRodas;
-    }
+	public void setMotor(Motor motor) {
+		this.motor = motor;
+	}
+
+	abstract int calcVelocMax(int velocMax);
 }
